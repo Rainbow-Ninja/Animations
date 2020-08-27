@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Standard</title>
+        <style>
+            .container{
+                display:flex;
+                flex-direction: column;
+            }
+
+            .smiley{
+                width: 75px;
+                height: 75x;
+            }
+            
+            #first{
+                animation: move 2s;
+            }
+            
+            #second{
+                animation: delay 2s 5s;
+            }
+
+            #third{
+                animation: thrice 2s 3;
+            }
+
+            #fourth{
+                animation: timing 2s linear;
+            }
+
+            #fifth{
+                animation: timing 2s 1s linear infinite ;
+            }
+
+            @keyframes move {
+                0% {transform:translate(0, 0);}
+                100% {transform:translate(500px, 0);}
+            }
+            
+            @keyframes delay {
+                0% {transform:translate(0, 0);}
+                100% {transform:translate(500px, 0);}
+            }
+
+            @keyframes thrice {
+                0% {transform:translate(0, 0);}
+                100% {transform:translate(500px, 0);}
+            }
+
+            @keyframes timing {
+                0% {transform:translate(0, 0);}
+                100% {transform:translate(500px, 0);}
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h3>Standard Animation - animation: move 2s;</h3>
+            <img class="smiley" id="first" src="./smiley.png" alt="smiley">
+            <h3>Delay - animation: delay 2s 5s;</h3>
+            <img class="smiley" id="second" src="./smiley.png" alt="smiley">
+            <h3>Thrice - animation: thrice 2s 3;</h3>
+            <img class="smiley" id="third" src="./smiley.png" alt="smiley">
+            <h3>Timing - animation: timing 2s linear;</h3>
+            <img class="smiley" id="fourth" src="./smiley.png" alt="smiley">
+            <h3>All of it - animation: timing 2s linear;</h3>
+            <img class="smiley" id="fifth" src="./smiley.png" alt="smiley">
+        </div>
+    </body>
+</html>
